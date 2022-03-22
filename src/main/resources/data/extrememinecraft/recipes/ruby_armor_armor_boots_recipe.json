@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "extrememinecraft:ruby"
+    },
+    "2": {
+      "item": "extrememinecraft:ruby"
+    },
+    "3": {
+      "item": "extrememinecraft:ruby"
+    },
+    "5": {
+      "item": "extrememinecraft:ruby"
+    }
+  },
+  "result": {
+    "item": "extrememinecraft:ruby_armor_armor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "extrememinecraft:ruby"
+    },
+    "1": {
+      "item": "extrememinecraft:ruby"
+    },
+    "2": {
+      "item": "extrememinecraft:ruby"
+    },
+    "3": {
+      "item": "extrememinecraft:ruby"
+    },
+    "5": {
+      "item": "extrememinecraft:ruby"
+    }
+  },
+  "result": {
+    "item": "extrememinecraft:ruby_armor_armor_helmet",
+    "count": 1
+  }
+}

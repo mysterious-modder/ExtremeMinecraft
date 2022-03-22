@@ -7,16 +7,204 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ruby"
+    },
+    {
+      "name": "RubyOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore"
+    },
+    {
+      "name": "RubyBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block"
+    },
+    {
+      "name": "RubyOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_block_recipe"
+    },
+    {
+      "name": "RubyBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block_ore_recipe"
+    },
+    {
+      "name": "RubyOreSmelting",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_smelting"
+    },
+    {
+      "name": "Ruby_setPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_pickaxe"
+    },
+    {
+      "name": "Ruby_setAxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_axe"
+    },
+    {
+      "name": "Ruby_setSword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_sword"
+    },
+    {
+      "name": "Ruby_setShovel",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_shovel"
+    },
+    {
+      "name": "Ruby_setHoe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_hoe"
+    },
+    {
+      "name": "Ruby_setPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_pickaxe_recipe"
+    },
+    {
+      "name": "Ruby_setAxeRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_axe_recipe"
+    },
+    {
+      "name": "Ruby_setSwordRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_sword_recipe"
+    },
+    {
+      "name": "Ruby_setShovelRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_shovel_recipe"
+    },
+    {
+      "name": "Ruby_setHoeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_set_hoe_recipe"
+    },
+    {
+      "name": "Ruby_armorArmor",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Ruby_armorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "Ruby_armorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_armor_body_recipe"
+    },
+    {
+      "name": "Ruby_armorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "Ruby_armorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.extrememinecraft.ruby": "Ruby"
+      "item.extrememinecraft.ruby_armor_armor_helmet": "Ruby_armor Helmet",
+      "item.extrememinecraft.ruby_set_axe": "Ruby_set Axe",
+      "item.extrememinecraft.ruby_set_sword": "Ruby_set Sword",
+      "item.extrememinecraft.ruby_armor_armor_chestplate": "Ruby_armor Chestplate",
+      "item.extrememinecraft.ruby_armor_armor_leggings": "Ruby_armor Leggings",
+      "item.extrememinecraft.ruby_set_hoe": "Ruby_set Hoe",
+      "block.extrememinecraft.ruby_ore": "Ruby Ore",
+      "item.extrememinecraft.ruby_set_pickaxe": "Ruby_set Pickaxe",
+      "item.extrememinecraft.ruby": "Ruby",
+      "item.extrememinecraft.ruby_set_shovel": "Ruby_set Shovel",
+      "item.extrememinecraft.ruby_armor_armor_boots": "Ruby_armor Boots",
+      "block.extrememinecraft.ruby_block": "Block of Ruby"
     },
     "pt_br": {
-      "item.extrememinecraft.ruby": "Rubi"
+      "item.extrememinecraft.ruby_armor_armor_helmet": "Ruby_armor Helmet",
+      "item.extrememinecraft.ruby_set_axe": "Ruby_set Axe",
+      "item.extrememinecraft.ruby_set_sword": "Ruby_set Sword",
+      "item.extrememinecraft.ruby_armor_armor_chestplate": "Ruby_armor Chestplate",
+      "item.extrememinecraft.ruby_armor_armor_leggings": "Ruby_armor Leggings",
+      "item.extrememinecraft.ruby_set_hoe": "Ruby_set Hoe",
+      "block.extrememinecraft.ruby_ore": "Ruby Ore",
+      "item.extrememinecraft.ruby_set_pickaxe": "Ruby_set Pickaxe",
+      "item.extrememinecraft.ruby": "Ruby",
+      "item.extrememinecraft.ruby_set_shovel": "Ruby_set Shovel",
+      "item.extrememinecraft.ruby_armor_armor_boots": "Ruby_armor Boots",
+      "block.extrememinecraft.ruby_block": "Block of Ruby"
     }
   },
   "foldersRoot": {

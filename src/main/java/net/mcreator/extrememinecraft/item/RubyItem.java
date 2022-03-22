@@ -2,23 +2,14 @@
 package net.mcreator.extrememinecraft.item;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifier;
-import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.extrememinecraft.ExtrememinecraftModElements;
-
-import com.google.common.collect.Multimap;
-import com.google.common.collect.ImmutableMultimap;
 
 @ExtrememinecraftModElements.ModElement.Tag
 public class RubyItem extends ExtrememinecraftModElements.ModElement {
@@ -36,7 +27,7 @@ public class RubyItem extends ExtrememinecraftModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).isImmuneToFire().rarity(Rarity.COMMON));
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("ruby");
 		}
 
@@ -53,25 +44,6 @@ public class RubyItem extends ExtrememinecraftModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
-		}
-
-		@Override
-		public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot) {
-			if (slot == EquipmentSlotType.MAINHAND) {
-				ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
-				builder.putAll(super.getAttributeModifiers(slot));
-				builder.put(Attributes.ATTACK_DAMAGE,
-						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Item modifier", (double) 3, AttributeModifier.Operation.ADDITION));
-				builder.put(Attributes.ATTACK_SPEED,
-						new AttributeModifier(ATTACK_SPEED_MODIFIER, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
-			}
-			return super.getAttributeModifiers(slot);
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
 		}
 	}
 }

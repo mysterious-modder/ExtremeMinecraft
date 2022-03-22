@@ -1,3 +1,14 @@
 {
-  "item.extrememinecraft.ruby": "Rubi"
+  "item.extrememinecraft.ruby_armor_armor_helmet": "Ruby_armor Helmet",
+  "item.extrememinecraft.ruby_set_axe": "Ruby_set Axe",
+  "item.extrememinecraft.ruby_set_sword": "Ruby_set Sword",
+  "item.extrememinecraft.ruby_armor_armor_chestplate": "Ruby_armor Chestplate",
+  "item.extrememinecraft.ruby_armor_armor_leggings": "Ruby_armor Leggings",
+  "item.extrememinecraft.ruby_set_hoe": "Ruby_set Hoe",
+  "block.extrememinecraft.ruby_ore": "Ruby Ore",
+  "item.extrememinecraft.ruby_set_pickaxe": "Ruby_set Pickaxe",
+  "item.extrememinecraft.ruby": "Ruby",
+  "item.extrememinecraft.ruby_set_shovel": "Ruby_set Shovel",
+  "item.extrememinecraft.ruby_armor_armor_boots": "Ruby_armor Boots",
+  "block.extrememinecraft.ruby_block": "Block of Ruby"
 }
