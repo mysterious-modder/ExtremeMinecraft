@@ -173,6 +173,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ruby_armor_armor_boots_recipe"
+    },
+    {
+      "name": "Garnet",
+      "type": "livingentity",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "garnet"
     }
   ],
   "variable_elements": [],
@@ -182,6 +190,8 @@
       "item.extrememinecraft.ruby_armor_armor_helmet": "Ruby Helmet",
       "item.extrememinecraft.ruby_set_axe": "Ruby Axe",
       "item.extrememinecraft.ruby_set_sword": "Ruby Sword",
+      "item.extrememinecraft.garnet_spawn_egg": "Garnet Spawn Egg",
+      "entity.extrememinecraft.garnet": "Garnet",
       "item.extrememinecraft.ruby_armor_armor_chestplate": "Ruby Chestplate",
       "item.extrememinecraft.ruby_armor_armor_leggings": "Ruby Leggings",
       "item.extrememinecraft.ruby_set_hoe": "Ruby Hoe",
@@ -196,6 +206,8 @@
       "item.extrememinecraft.ruby_armor_armor_helmet": "Capacete de Rubi",
       "item.extrememinecraft.ruby_set_axe": "Machado de Rubi",
       "item.extrememinecraft.ruby_set_sword": "Espada de Rubi",
+      "item.extrememinecraft.garnet_spawn_egg": "Garnet Spawn Egg",
+      "entity.extrememinecraft.garnet": "Garnet",
       "item.extrememinecraft.ruby_armor_armor_chestplate": "Peitoral de Rubi",
       "item.extrememinecraft.ruby_armor_armor_leggings": "Calça de Rubi",
       "item.extrememinecraft.ruby_set_hoe": "Enxada de Rubi",
