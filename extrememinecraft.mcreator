@@ -1,0 +1,41 @@
+{
+  "mod_elements": [
+    {
+      "name": "Ruby",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.extrememinecraft.ruby": "Ruby"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "extrememinecraft",
+    "modName": "ExtremeMinecraft",
+    "version": "1.0.0",
+    "author": "pedro, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.extrememinecraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}
