@@ -1,14 +1,14 @@
 {
-  "item.extrememinecraft.ruby_armor_armor_helmet": "Ruby_armor Helmet",
-  "item.extrememinecraft.ruby_set_axe": "Ruby_set Axe",
-  "item.extrememinecraft.ruby_set_sword": "Ruby_set Sword",
-  "item.extrememinecraft.ruby_armor_armor_chestplate": "Ruby_armor Chestplate",
-  "item.extrememinecraft.ruby_armor_armor_leggings": "Ruby_armor Leggings",
-  "item.extrememinecraft.ruby_set_hoe": "Ruby_set Hoe",
-  "block.extrememinecraft.ruby_ore": "Ruby Ore",
-  "item.extrememinecraft.ruby_set_pickaxe": "Ruby_set Pickaxe",
-  "item.extrememinecraft.ruby": "Ruby",
-  "item.extrememinecraft.ruby_set_shovel": "Ruby_set Shovel",
-  "item.extrememinecraft.ruby_armor_armor_boots": "Ruby_armor Boots",
-  "block.extrememinecraft.ruby_block": "Block of Ruby"
+  "item.extrememinecraft.ruby_armor_armor_helmet": "Capacete de Rubi",
+  "item.extrememinecraft.ruby_set_axe": "Machado de Rubi",
+  "item.extrememinecraft.ruby_set_sword": "Espada de Rubi",
+  "item.extrememinecraft.ruby_armor_armor_chestplate": "Peitoral de Rubi",
+  "item.extrememinecraft.ruby_armor_armor_leggings": "Calça de Rubi",
+  "item.extrememinecraft.ruby_set_hoe": "Enxada de Rubi",
+  "block.extrememinecraft.ruby_ore": "Minério de Rubi",
+  "item.extrememinecraft.ruby_set_pickaxe": "Picareta de Rubi",
+  "item.extrememinecraft.ruby": "Rubi",
+  "item.extrememinecraft.ruby_set_shovel": "Pá de Rubi",
+  "item.extrememinecraft.ruby_armor_armor_boots": "Botas de Rubi",
+  "block.extrememinecraft.ruby_block": "Bloco de Rubi"
 }
