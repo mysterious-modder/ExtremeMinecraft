@@ -14,6 +14,9 @@
   "language_map": {
     "en_us": {
       "item.extrememinecraft.ruby": "Ruby"
+    },
+    "pt_br": {
+      "item.extrememinecraft.ruby": "Rubi"
     }
   },
   "foldersRoot": {
