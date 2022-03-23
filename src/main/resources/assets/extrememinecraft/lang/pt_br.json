@@ -3,6 +3,7 @@
   "item.extrememinecraft.ruby_set_axe": "Machado de Rubi",
   "item.extrememinecraft.ruby_set_sword": "Espada de Rubi",
   "item.extrememinecraft.garnet_spawn_egg": "Garnet Spawn Egg",
+  "item.extrememinecraft.toothless_spawn_egg": "Toothless Spawn Egg",
   "entity.extrememinecraft.garnet": "Garnet",
   "item.extrememinecraft.ruby_armor_armor_chestplate": "Peitoral de Rubi",
   "item.extrememinecraft.ruby_armor_armor_leggings": "CalÃ§a de Rubi",
@@ -12,5 +13,6 @@
   "item.extrememinecraft.ruby": "Rubi",
   "item.extrememinecraft.ruby_set_shovel": "PÃ¡ de Rubi",
   "item.extrememinecraft.ruby_armor_armor_boots": "Botas de Rubi",
-  "block.extrememinecraft.ruby_block": "Bloco de Rubi"
+  "block.extrememinecraft.ruby_block": "Bloco de Rubi",
+  "entity.extrememinecraft.toothless": "Toothless"
 }

@@ -181,6 +181,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "garnet"
+    },
+    {
+      "name": "Toothless",
+      "type": "livingentity",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toothless"
     }
   ],
   "variable_elements": [],
@@ -191,6 +199,7 @@
       "item.extrememinecraft.ruby_set_axe": "Ruby Axe",
       "item.extrememinecraft.ruby_set_sword": "Ruby Sword",
       "item.extrememinecraft.garnet_spawn_egg": "Garnet Spawn Egg",
+      "item.extrememinecraft.toothless_spawn_egg": "Toothless Spawn Egg",
       "entity.extrememinecraft.garnet": "Garnet",
       "item.extrememinecraft.ruby_armor_armor_chestplate": "Ruby Chestplate",
       "item.extrememinecraft.ruby_armor_armor_leggings": "Ruby Leggings",
@@ -200,13 +209,15 @@
       "item.extrememinecraft.ruby": "Ruby",
       "item.extrememinecraft.ruby_set_shovel": "Ruby Shovel",
       "item.extrememinecraft.ruby_armor_armor_boots": "Ruby Boots",
-      "block.extrememinecraft.ruby_block": "Block of Ruby"
+      "block.extrememinecraft.ruby_block": "Block of Ruby",
+      "entity.extrememinecraft.toothless": "Toothless"
     },
     "pt_br": {
       "item.extrememinecraft.ruby_armor_armor_helmet": "Capacete de Rubi",
       "item.extrememinecraft.ruby_set_axe": "Machado de Rubi",
       "item.extrememinecraft.ruby_set_sword": "Espada de Rubi",
       "item.extrememinecraft.garnet_spawn_egg": "Garnet Spawn Egg",
+      "item.extrememinecraft.toothless_spawn_egg": "Toothless Spawn Egg",
       "entity.extrememinecraft.garnet": "Garnet",
       "item.extrememinecraft.ruby_armor_armor_chestplate": "Peitoral de Rubi",
       "item.extrememinecraft.ruby_armor_armor_leggings": "Calça de Rubi",
@@ -216,7 +227,8 @@
       "item.extrememinecraft.ruby": "Rubi",
       "item.extrememinecraft.ruby_set_shovel": "Pá de Rubi",
       "item.extrememinecraft.ruby_armor_armor_boots": "Botas de Rubi",
-      "block.extrememinecraft.ruby_block": "Bloco de Rubi"
+      "block.extrememinecraft.ruby_block": "Bloco de Rubi",
+      "entity.extrememinecraft.toothless": "Toothless"
     }
   },
   "foldersRoot": {
