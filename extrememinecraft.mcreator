@@ -189,6 +189,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "toothless"
+    },
+    {
+      "name": "SummonGarnet",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_garnet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GarnetGem",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "garnet_gem"
     }
   ],
   "variable_elements": [],
@@ -202,6 +230,7 @@
       "item.extrememinecraft.toothless_spawn_egg": "Toothless Spawn Egg",
       "entity.extrememinecraft.garnet": "Garnet",
       "item.extrememinecraft.ruby_armor_armor_chestplate": "Ruby Chestplate",
+      "item.extrememinecraft.garnet_gem": "Garnet Gem",
       "item.extrememinecraft.ruby_armor_armor_leggings": "Ruby Leggings",
       "item.extrememinecraft.ruby_set_hoe": "Ruby Hoe",
       "block.extrememinecraft.ruby_ore": "Ruby Ore",
@@ -220,6 +249,7 @@
       "item.extrememinecraft.toothless_spawn_egg": "Toothless Spawn Egg",
       "entity.extrememinecraft.garnet": "Garnet",
       "item.extrememinecraft.ruby_armor_armor_chestplate": "Peitoral de Rubi",
+      "item.extrememinecraft.garnet_gem": "Garnet Gem",
       "item.extrememinecraft.ruby_armor_armor_leggings": "Calça de Rubi",
       "item.extrememinecraft.ruby_set_hoe": "Enxada de Rubi",
       "block.extrememinecraft.ruby_ore": "Minério de Rubi",

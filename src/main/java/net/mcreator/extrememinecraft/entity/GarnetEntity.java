@@ -10,19 +10,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
-import net.minecraft.pathfinding.SwimmerPathNavigator;
-import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
@@ -33,15 +29,16 @@ import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.controller.MovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.extrememinecraft.item.GarnetGemItem;
 import net.mcreator.extrememinecraft.entity.renderer.GarnetRenderer;
 import net.mcreator.extrememinecraft.ExtrememinecraftModElements;
 
@@ -84,14 +81,13 @@ public class GarnetEntity extends ExtrememinecraftModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 200);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 7);
-			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 1);
+			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.4);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 1);
-			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.5);
 			event.put(entity, ammma.create());
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -100,40 +96,6 @@ public class GarnetEntity extends ExtrememinecraftModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-			this.setPathPriority(PathNodeType.WATER, 0);
-			this.moveController = new MovementController(this) {
-				@Override
-				public void tick() {
-					if (CustomEntity.this.isInWater())
-						CustomEntity.this.setMotion(CustomEntity.this.getMotion().add(0, 0.005, 0));
-					if (this.action == MovementController.Action.MOVE_TO && !CustomEntity.this.getNavigator().noPath()) {
-						double dx = this.posX - CustomEntity.this.getPosX();
-						double dy = this.posY - CustomEntity.this.getPosY();
-						double dz = this.posZ - CustomEntity.this.getPosZ();
-						float f = (float) (MathHelper.atan2(dz, dx) * (double) (180 / Math.PI)) - 90;
-						float f1 = (float) (this.speed * CustomEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
-						CustomEntity.this.rotationYaw = this.limitAngle(CustomEntity.this.rotationYaw, f, 10);
-						CustomEntity.this.renderYawOffset = CustomEntity.this.rotationYaw;
-						CustomEntity.this.rotationYawHead = CustomEntity.this.rotationYaw;
-						if (CustomEntity.this.isInWater()) {
-							CustomEntity.this.setAIMoveSpeed((float) CustomEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
-							float f2 = -(float) (MathHelper.atan2(dy, MathHelper.sqrt(dx * dx + dz * dz)) * (180F / Math.PI));
-							f2 = MathHelper.clamp(MathHelper.wrapDegrees(f2), -85, 85);
-							CustomEntity.this.rotationPitch = this.limitAngle(CustomEntity.this.rotationPitch, f2, 5);
-							float f3 = MathHelper.cos(CustomEntity.this.rotationPitch * (float) (Math.PI / 180.0));
-							CustomEntity.this.setMoveForward(f3 * f1);
-							CustomEntity.this.setMoveVertical((float) (f1 * dy));
-						} else {
-							CustomEntity.this.setAIMoveSpeed(f1 * 0.05F);
-						}
-					} else {
-						CustomEntity.this.setAIMoveSpeed(0);
-						CustomEntity.this.setMoveVertical(0);
-						CustomEntity.this.setMoveForward(0);
-					}
-				}
-			};
-			this.navigator = new SwimmerPathNavigator(this, this.world);
 		}
 
 		@Override
@@ -155,6 +117,11 @@ public class GarnetEntity extends ExtrememinecraftModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(GarnetGemItem.block));
 		}
 
 		@Override
@@ -182,21 +149,6 @@ public class GarnetEntity extends ExtrememinecraftModElements.ModElement {
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public boolean canBreatheUnderwater() {
-			return true;
-		}
-
-		@Override
-		public boolean isNotColliding(IWorldReader world) {
-			return world.checkNoEntityCollision(this);
-		}
-
-		@Override
-		public boolean isPushedByWater() {
-			return false;
 		}
 	}
 }
